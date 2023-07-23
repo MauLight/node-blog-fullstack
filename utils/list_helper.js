@@ -1,5 +1,4 @@
 const _ = require('lodash')
-const { blogs, blogList } = require('../utils/blogs')
 
 const totalLikes = (blogs) => {
   let aux = 0
@@ -32,9 +31,6 @@ const mostBlogs = (blogs) => {
     blogs: _.max(Object.values(mapBlogs), o => mapBlogs[o])
   }
 }
-
-// console.log(_.map(blogs, 'likes'))
-// console.log(_.map(blogs, 'author'))
 
 const mostLikes = (blogs) => {
   let likesArr = []
