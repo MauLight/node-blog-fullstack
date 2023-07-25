@@ -1,9 +1,18 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkVsdmlyYV9TaGFraXJvdmEiLCJpZCI6IjY0YmRjNDI2NjZlNWY3NmU3NjdlMjk4YSIsImlhdCI6MTY5MDI5NDg4NCwiZXhwIjoxNjkwMjk4NDg0fQ.gMDGkEBw2APUSOl0n_CU_uQMMW-UJEUeQh8tj6sQJeI
 
 {
-    "title": "Gati's blog",
-    "author": "Gati",
+    "title": "Some super interesting thing",
+    "author": "Elv",
     "url": "www.gatiwriters.quest",
     "likes": 300
 }
+
+# {
+#     "username": "Mau_Luz",
+#     "name": "Mau",
+#     "password": "Elvandmau916.",
+#     "blogs": [],
+# }
+

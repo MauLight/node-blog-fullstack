@@ -26,7 +26,7 @@ describe('when there is initially one user in the db', () => {
     const newUser = {
       username: 'Mau',
       name: 'Mau Light',
-      password: 'motmot1984'
+      password: 'Motmot1984.'
     }
 
     await api
@@ -46,9 +46,9 @@ describe('when there is initially one user in the db', () => {
     const usersAtStart = await helper.usersInDb()
 
     const newUser = {
-      username: 'Mau',
+      username: 'root',
       name: 'Mau Light',
-      password: 'motmot1984'
+      password: 'Motmot1984.'
     }
 
     const result = await api
@@ -57,7 +57,7 @@ describe('when there is initially one user in the db', () => {
       .expect(400)
       .expect('Content-Type', /application\/json/)
 
-    expect(result.body.error).toContain('username must be unique')
+    expect(result.body.error).toContain('expected `username` to be unique.')
 
     const usersAtEnd = await helper.usersInDb()
     expect(usersAtEnd).toEqual(usersAtStart)

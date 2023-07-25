@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
     validate: {
       validator: function (v) {
         //Minimum eight characters, at least one letter, one number and one special character
-        return /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(v)
+        return /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/.test(v)
       }
     },
     required: true
